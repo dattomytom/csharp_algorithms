@@ -7,11 +7,11 @@ namespace QuickSort
         public static IEnumerable<object[]> SampleArrays()
         {
             yield return new object[] { CreateRandomArray(200), 0, 199, "Small Unsorted" };
-            //yield return new object[] { CreateRandomArray(2000), 0, 1999, "Medium Unsorted" };
-            //yield return new object[] { CreateRandomArray(10000), 0, 9999, "Large Unsorted" };
-            //yield return new object[] { CreateSortedArray(200), 0, 199, "Small Sorted" };
-            //yield return new object[] { CreateSortedArray(2000), 0, 1999, "Medium Sorted" };
-            //yield return new object[] { CreateSortedArray(10000), 0, 9999, "Large Sorted" };
+            yield return new object[] { CreateRandomArray(2000), 0, 1999, "Medium Unsorted" };
+            yield return new object[] { CreateRandomArray(10000), 0, 9999, "Large Unsorted" };
+            yield return new object[] { CreateSortedArray(200), 0, 199, "Small Sorted" };
+            yield return new object[] { CreateSortedArray(2000), 0, 1999, "Medium Sorted" };
+            yield return new object[] { CreateSortedArray(10000), 0, 9999, "Large Sorted" };
         }
        
         [Benchmark]
